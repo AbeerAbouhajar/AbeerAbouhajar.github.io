@@ -1,8 +1,290 @@
+<!doctype html>
 <html>
-<title></title>
-<head></head>
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background-image: url(https://i.pinimg.com/736x/22/84/b5/2284b53d7b45e3b4bbdcd030b3f94120.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 60%;
+            background-position: left 90% right 00px bottom 66%;
+            padding-top: 5%;
+        }
+        
+        .centered {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .social {
+            margin: auto;
+            align-content: center;
+            display: table;
+        }
+        
+        #name {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            text-align: bottom;
+        }
+        
+        #msg {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+        
+        img {
+            border-radius: 60%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+        
+        #about {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.7rem;
+            line-height: 2rem;
+            margin-top: 3rem;
+            margin-left: 30%;
+        }
+        
+        #para {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 30%
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        li a {
+            display: block;
+            padding: 20px;
+            background-color: #dddddd;
+        }
+        /*FOR NAV*/
+        
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(0, 0, 0);
+            margin-top: -6%;
+            margin-bottom: 6%;
+        }
+        
+        .topnav a {
+            float: right;
+            color: #ffffff;
+            text-align: center;
+            padding: 29px 16px;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: rgb(231, 218, 218);
+            color: rgb(255, 255, 255);
+        }
+        
+        .topnav a.active {
+            background-color: #0c0f0c;
+            color: white;
+        }
+        /*Social Media*/
+        
+        .fa {
+            padding: 20px;
+            font-size: 16px;
+            width: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
+        
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+        
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+        
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+        
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+        
+        .fa-pinterest {
+            background: #cb2027;
+            color: white;
+        }
+        
+        .fa-snapchat-ghost {
+            background: #fffc00;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+        
+        .fa-skype {
+            background: #00aff0;
+            color: white;
+        }
+        
+        .fa-android {
+            background: #a4c639;
+            color: white;
+        }
+        
+        .fa-dribbble {
+            background: #ea4c89;
+            color: white;
+        }
+        
+        .fa-vimeo {
+            background: #45bbff;
+            color: white;
+        }
+        
+        .fa-tumblr {
+            background: #2c4762;
+            color: white;
+        }
+        
+        .fa-vine {
+            background: #00b489;
+            color: white;
+        }
+        
+        .fa-foursquare {
+            background: #45bbff;
+            color: white;
+        }
+        
+        .fa-stumbleupon {
+            background: #eb4924;
+            color: white;
+        }
+        
+        .fa-flickr {
+            background: #f40083;
+            color: white;
+        }
+        
+        .fa-yahoo {
+            background: #430297;
+            color: white;
+        }
+        
+        .fa-soundcloud {
+            background: #ff5500;
+            color: white;
+        }
+        
+        .fa-reddit {
+            background: #ff5700;
+            color: white;
+        }
+        
+        .fa-rss {
+            background: #ff6600;
+            color: white;
+        }
+        
+        .social {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.7rem;
+            line-height: 2rem;
+            margin-top: 3rem;
+            margin-left: 30%;
+        }
+        
+        .hobbies {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.7rem;
+            line-height: 2rem;
+            margin-top: 3rem;
+            margin-left: 30%;
+        }
+        
+        #list {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 30%
+        }
+    </style>
+
+    <div class="topnav">
+        <a href="#hobbie">Hobbies</a>
+        <a href="#aboutAnch">About</a>
+        <a class="active" href="#home">Home</a>
+
+    </div>
+
+</head>
+
 <body>
-<h1> ABBER ABOUHAJAR</h1>
-<h2>Hello to my HTML page</h2>
+    <div class="centered">
+        <h1 id="name"> ABEER ABOUHAJAR</h1>
+        <h2 id="msg">Welcome to my HTML page</h2>
+        <img src="https://scontent-dub4-1.xx.fbcdn.net/v/t1.0-1/p320x320/132716354_2359920784153513_7868615711361904352_n.jpg?_nc_cat=101&ccb=2&_nc_sid=7206a8&_nc_ohc=vpdyQJtV9NoAX83f3dQ&_nc_ht=scontent-dub4-1.xx&tp=6&oh=e52b044a9756b2a447941ade0162867a&oe=60165B4A">
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <hr>
+
+        <div id="aboutAnch">
+            <h3 id="about">About</h3>
+            <p id="para">Hello my name is Abeer Abouhajar First year Student at <a href="https://www.itcarlow.ie/">Institute of Technology, Carlow</a> <br> studying Computing in interactive Digital Art and Design.</p>
+            <br><br>
+        </div>
+        <div id="hobbie">
+            <h3 id="about">Hobbies</h3>
+            <ul id="list">
+                <li>Art</li>
+                <li>Photography</li>
+                <li>Writing</li>
+                <li>Reading</li>
+            </ul>
+
+        </div>
+
+
+        <div class="social">
+            <h4 id="social">Social Media Links</h4>
+            <a href="https://www.facebook.com/abeer.hadede" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/abouhajar_abeer" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/abeer-abouhajar-8a67361b9/?originalSubdomain=ie" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/abeer_abouhajar/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://github.com/AbeerAbouhajar" target="_blank" class="fa fa-github"></a>
+        </div>
+    </div>
 </body>
-</html>
+
+</html
